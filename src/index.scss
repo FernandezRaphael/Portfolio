@@ -1,0 +1,92 @@
+:root {
+  // Colors
+  --whiteColor: #ffffff;
+  --purpleBlue: #BA8AFA;
+  --font-color: #868686;
+  --carbon-color: #191919;
+  --bg-color: #111111;
+
+  // Sizing
+  --paddingPage: 6vw;
+  --xs-sizing: 6px;
+  --s-sizing: 16px;
+  --m-sizing: 24px;
+  --l-sizing: 32px;
+  --xl-sizing: 64px;
+  --xxl-sizing: 120px;
+  --spacer: 15vh;
+
+  @media screen and (max-width: 1000px) {
+    --spacer: 6vh;
+  }
+}
+
+@font-face {
+  font-family: 'alpha';
+  src: url(./assets/fonts/AlphaLyrae-Medium.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: crosshair;
+  // border: 1px solid red;
+}
+
+body {
+  color: var(--whiteColor);
+  font-family: 'alpha';
+  background: var(--bg-color);
+}
+
+// Styles Font
+
+h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'alpha';
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: var(--purpleBlue);
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 32px;
+  }
+}
+
+p,
+a,
+.text-p,
+h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.6;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 12px;
+  }
+}
+
+a,
+button,
+p.big_text {
+  color: var(--whiteColor);
+  text-decoration: none;
+  opacity: 1;
+  font-size: 10px;
+  transition: color 0.5s;
+
+  &:hover {
+    color: var(--purpleBlue);
+  }
+}

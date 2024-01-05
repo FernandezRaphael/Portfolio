@@ -1,0 +1,91 @@
+:root {
+  --whiteColor: #ffffff;
+  --purpleBlue: #BA8AFA;
+  --font-color: #868686;
+  --carbon-color: #191919;
+  --bg-color: #111111;
+  --paddingPage: 6vw;
+  --xs-sizing: 6px;
+  --s-sizing: 16px;
+  --m-sizing: 24px;
+  --l-sizing: 32px;
+  --xl-sizing: 64px;
+  --xxl-sizing: 120px;
+  --spacer: 15vh;
+}
+@media screen and (max-width: 1000px) {
+  :root {
+    --spacer: 6vh;
+  }
+}
+
+@font-face {
+  font-family: "alpha";
+  src: url(./assets/fonts/AlphaLyrae-Medium.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: crosshair;
+}
+
+body {
+  color: var(--whiteColor);
+  font-family: "alpha";
+  background: var(--bg-color);
+}
+
+h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "alpha";
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+h2::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: var(--purpleBlue);
+}
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+p,
+a,
+.text-p,
+h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.6;
+}
+@media screen and (max-width: 1000px) {
+  p,
+  a,
+  .text-p,
+  h4 {
+    font-size: 12px;
+  }
+}
+
+a,
+button,
+p.big_text {
+  color: var(--whiteColor);
+  text-decoration: none;
+  opacity: 1;
+  font-size: 10px;
+  transition: color 0.5s;
+}
+a:hover,
+button:hover,
+p.big_text:hover {
+  color: var(--purpleBlue);
+}/*# sourceMappingURL=index.css.map */
