@@ -40,7 +40,7 @@ function Canva() {
     // Votre tableau de projets
     const projects = [
         { link: '/', name: 'Portfolio', date: '2023 - 2024', description: 'You are currently on it.' },
-        { link: 'https://fernandezraphael3d.netlify.app/', name: '3D Portfolio', date: '2024', description: 'My Portfolio in 3D.' },
+        { link: 'https://fernandezraphael3d.netlify.app/', name: '3D Portfolio', date: '2024', description: 'My Portfolio in 3D. Not finish' },
     ];
 
     // Ajouter des objets vides au hasard
